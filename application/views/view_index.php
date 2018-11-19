@@ -11,6 +11,12 @@
 	<script src="<?php echo base_url(); ?>JS/mesFonctions.js"></script>
 </head>
 <body>
+    <h3>Votre nom :</h3>
+    <input type='text' id='txtNom'><br>
+    <input type='button' onclick='connexion()' value='Connexion'>
+    <br>
 
+    <div id='divRegion'></div>
+    <div id='divVille'></div>
 </body>
 </html>
