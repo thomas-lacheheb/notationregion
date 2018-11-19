@@ -46,8 +46,8 @@ function VoirVilleDeLaRegion(idRegion)
 function ajouterScore()
 {
     // alert("ajouterScore");
-    var idRegion = document.querySelector('input[name="nomRegion"]:checked').value;
-    // var idVille = document.querySelector('input[name="nomVille"]:checked').value;
+    var idRegion = $('input[name=nomRegion]:checked').val();
+    // var idVille = $('input[name=nomVille]:checked').val();
     $.ajax
     (
         {
@@ -58,6 +58,8 @@ function ajouterScore()
             {
                 connexion();
                 VoirVilleDeLaRegion(idRegion);
+                // $("[name=nomRegion]").val([""+idRegion+""]);
+                // $("[name=nomVille]").val([""+idVille+""]);
             },
             error:function()
             {
